@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>first-vue</title>
+  </head>
+  <body>
+    <div id="app">
+        {{ message }}
+    </div>
+    <div id="app-2">
+        <span v-bind:title="message">
+            鼠标悬停几秒钟查看此处动态绑定的提示信息！
+        </span>
+        <input v-model="question">
+        <input :value="question">
+    </div>
+    <div id="counter-event-example">
+        <p>{{ total }}</p>
+        <button-counter v-on:increment="incrementTotal"></button-counter>
+        <button-counter v-on:increment="incrementTotal"></button-counter>
+    </div>
+
+    <!-- built files will be auto injected -->
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+    <script src="http://apps.bdimg.com/libs/vue/1.0.8/vue.min.js
+"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
